@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- camera body -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M36,42h8l4,-6h12l4,6h8a4,4 0,0 1,4 4v22a4,4 0,0 1,-4 4H36a4,4 0,0 1,-4 -4V46a4,4 0,0 1,4 -4z" />
+    <path android:fillColor="#E1306C"
+        android:pathData="M54,57m-9,0a9,9 0,1 1,18 0a9,9 0,1 1,-18 0" />
+    <!-- up arrow -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M54,22l7,8h-4.5v4h-5v-4H47z" />
+</vector>

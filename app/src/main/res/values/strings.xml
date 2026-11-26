@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ReelSnap</string>
+    <string name="service_label">ReelSnap auto capture</string>
+    <string name="service_description">While Instagram or Facebook (including Lite) is open, ReelSnap waits, takes screenshots and swipes to the next reel. Screenshots are saved to Pictures/ReelSnap on this device only. Nothing is uploaded; the app has no internet permission.</string>
+</resources>
