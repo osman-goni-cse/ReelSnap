@@ -32,6 +32,18 @@ Settings (all editable in the app):
 ./gradlew assembleDebug
 ~/Library/Android/sdk/platform-tools/adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
+### Signed release build
+Release APKs are signed with a key kept **outside the repo**. `keystore.properties` (gitignored) points at it:
+```
+storeFile=/Users/<you>/.android/reelsnap-release.jks
+storePassword=…
+keyAlias=reelsnap
+keyPassword=…
+```
+Then `./gradlew assembleRelease` → `app/build/outputs/apk/release/app-release.apk`. Back up the keystore and its
+password: updates only install over a previous version when they are signed with the same key. Without
+`keystore.properties`, the release build is left unsigned.
+
 Then open ReelSnap → **Turn on** → enable "ReelSnap auto capture".
 
 **Android 13+ "Restricted setting":** sideloaded apps can't enable accessibility at first. Go to Settings → Apps → ReelSnap → ⋮ (top right) → **Allow restricted settings**, then enable the service again.

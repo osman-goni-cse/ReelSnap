@@ -7,3 +7,6 @@ build/
 .kotlin/
 captures/
 *.apk
+/keystore.properties
+*.jks
+*.keystore
